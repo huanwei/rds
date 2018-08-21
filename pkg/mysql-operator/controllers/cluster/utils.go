@@ -23,8 +23,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 	"github.com/huanwei/rds/pkg/constants"
+	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 )
 
 // SelectorForCluster creates a labels.Selector to match a given clusters

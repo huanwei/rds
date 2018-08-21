@@ -21,8 +21,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 	"github.com/huanwei/rds/pkg/constants"
+	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 )
 
 // NewForCluster will return a new headless Kubernetes service for a MySQL cluster

@@ -35,9 +35,9 @@ import (
 
 	cluster "github.com/huanwei/rds/pkg/mysql-agent/cluster"
 	clustermgr "github.com/huanwei/rds/pkg/mysql-agent/controllers/cluster/manager"
+	agentopts "github.com/huanwei/rds/pkg/mysql-agent/options"
 	clientset "github.com/huanwei/rds/pkg/mysql-operator/generated/clientset/versioned"
 	informers "github.com/huanwei/rds/pkg/mysql-operator/generated/informers/externalversions"
-	agentopts "github.com/huanwei/rds/pkg/mysql-agent/options"
 	signals "github.com/huanwei/rds/pkg/util/signals"
 )
 

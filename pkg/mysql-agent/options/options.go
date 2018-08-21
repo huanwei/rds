@@ -24,8 +24,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"github.com/huanwei/rds/pkg/constants"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // MySQLAgentOpts holds the configuration options required to

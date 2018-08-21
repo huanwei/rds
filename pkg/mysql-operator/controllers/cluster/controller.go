@@ -43,9 +43,9 @@ import (
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 
+	constants "github.com/huanwei/rds/pkg/constants"
 	clusterutil "github.com/huanwei/rds/pkg/mysql-operator/api/cluster"
 	v1alpha1 "github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
-	constants "github.com/huanwei/rds/pkg/constants"
 	controllerutils "github.com/huanwei/rds/pkg/mysql-operator/controllers/util"
 	clientset "github.com/huanwei/rds/pkg/mysql-operator/generated/clientset/versioned"
 	opscheme "github.com/huanwei/rds/pkg/mysql-operator/generated/clientset/versioned/scheme"

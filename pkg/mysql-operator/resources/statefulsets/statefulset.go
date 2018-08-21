@@ -28,8 +28,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 	"github.com/huanwei/rds/pkg/constants"
+	"github.com/huanwei/rds/pkg/mysql-operator/apis/rds/v1alpha1"
 	operatoropts "github.com/huanwei/rds/pkg/mysql-operator/options"
 	"github.com/huanwei/rds/pkg/mysql-operator/resources/secrets"
 	"github.com/huanwei/rds/pkg/version"

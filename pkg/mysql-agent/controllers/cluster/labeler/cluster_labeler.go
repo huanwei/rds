@@ -34,9 +34,9 @@ import (
 	cache "k8s.io/client-go/tools/cache"
 	workqueue "k8s.io/client-go/util/workqueue"
 
+	constants "github.com/huanwei/rds/pkg/constants"
 	cluster "github.com/huanwei/rds/pkg/mysql-agent/cluster"
 	innodb "github.com/huanwei/rds/pkg/mysql-agent/cluster/innodb"
-	constants "github.com/huanwei/rds/pkg/constants"
 	clusterctrl "github.com/huanwei/rds/pkg/mysql-agent/controllers/cluster"
 	controllerutils "github.com/huanwei/rds/pkg/mysql-agent/controllers/util"
 )
