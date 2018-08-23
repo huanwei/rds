@@ -232,6 +232,7 @@ func mysqlAgentContainer(cluster *v1alpha1.Cluster, mysqlAgentImage string, root
 		Image:        fmt.Sprintf("%s:%s", mysqlAgentImage, agentVersion),
 		Args:         []string{"--v=4"},
 		VolumeMounts: volumeMounts(cluster),
+		//NOTE(by Huan): Set env for msyql-agent use.
 		Env: []v1.EnvVar{
 			clusterNameEnvVar(cluster),
 			namespaceEnvVar(),
@@ -338,6 +339,9 @@ func NewForCluster(cluster *v1alpha1.Cluster, images operatoropts.Images, servic
 	podLabels := map[string]string{
 		constants.ClusterLabel: cluster.Name,
 	}
+	// NOTE by Huan:
+	// If we are in multi-master mode, set all pods with label `primary`.
+	// For single-master mode, we need to achieve this in mysql-agent.
 	if cluster.Spec.MultiMaster {
 		podLabels[constants.LabelClusterRole] = constants.ClusterRolePrimary
 	}

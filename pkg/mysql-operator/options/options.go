@@ -67,9 +67,9 @@ type MySQLOperatorOpts struct {
 	MinResyncPeriod metav1.Duration `yaml:"minResyncPeriod"`
 }
 
-// MySQLOperatorOpts will create a new MySQLOperatorOpts. If a valid
+// NewMySQLOperatorOpts will create a new MySQLOperatorOpts. If a valid
 // config file is specified and exists, it will be used to initialise the
-// server. Otherwise, a default server will be created.
+// MySQLOperatorOpts. Otherwise, a default MySQLOperatorOpts will be created.
 //
 // The values specified by either default may later be customised and overidden
 // by user specified commandline parameters.
